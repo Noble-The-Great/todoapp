@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a89952265c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/./toDo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <!--Code Begins-->
+
+  <!--Navbar--> 
+<div class="container">
+      
+  <div class="row" id="navbar">
+          <div class="col-4" id="navclass">
+               <h2>To Do App</h2>
+          </div>
+
+
+    <div class="col-8 " id="navicons">
+                <div class="icon">
+            <a href="" ><i class="fas fa-cog"></i></a>
+            <a href=""><i class="fas fa-user-circle"></i></a>
+                </div>  
+   </div>
+   
+
+  </div>
+</div>
+ <!--Navbar Ending--> 
+
+
+  <div class="container">
+
+
+
+    <div class="row" id="whole">
+
+      <!--left side-->
+      <div class="col-4 " id="leftwhole">
+
+
+         
+           <form action="" id="topLeft" data-new-list-form>
+           <input type="text" id="input1" placeholder="Enter List Name.." data-new-list-input>
+           
+           <button id="button1"><i class="fas fa-plus-square"></i></button>
+           
+          </form>
+           
+           <button id="deletelist">delete</button>
+           
+             <ul id="unorderedLeft" data-lists>
+               <li>love</li>
+               
+              <ul>
+
+            
+          
+        
+                
+        
+            </div>
+
+        
+          
+    
+  
+<!--left side End-->
+
+
+
+      <!--Right side-->
+  <div class="col-8" id="Rightcontainer" data-list-right-conatiner>
+<div>
+   <div id="righttop" data-list-right-header>
+     <h2>Shopping</h2>
+   </div>
+
+   <div id="Taskbox" data-list-task-right-box>
+
+    <div id="task1">
+      <input type="checkbox">
+      <label>buy bananas</label>
+    </div>
+
+  </div>
+
+</div>
+  
+<div id="bottomleft">
+<form id="addingnewtask" data-list-right-form>
+  <button>add task</button>
+  <input type="text" data-list-add-right-input>
+  
+</form>
+<div>
+<button data-clear-complete>clear completed</button>
+</div>
+
+</div>
+
+
+  
+
+
+       
+          
+
+
+
+
+
+      
+     
+    </div>
+  
+
+
+  <!--Code ends-->
+
+</div>
+<template id="taskTemplate">
+  <div id="task1">
+
+    <input type="checkbox">
+    <label></label>
+
+  </div>
+
+
+
+
+</template>
+
+    
+    <script type="text/javascript" src="javascript/toDo.js"></script>
+</body>
+</html>

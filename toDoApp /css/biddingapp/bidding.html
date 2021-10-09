@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/./bidding.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Navagation Bar-->
+    <nav>
+<div id="logo">
+    <h2> Bidding App </h2>
+</div>
+
+    <div id="Links">
+        <a href="">Find Bidders</a>
+        <a href="">Items</a>
+        <a href="">Events</a>
+        <a href="">Previous winners</a>
+    </div>
+    </nav>
+
+    <!--End Of Navigation Bar-->
+
+    <!--Start Of Prize and Winner Section-->
+    <div id="background-topsection">
+        <div id="clockbox">
+            <div id="countdown">:60</div>
+        </div>
+        <div id="str">
+        <button id="startbtn" onclick="setup()">Start Bidding</button>
+    </div>
+    <div id="parentprize">
+    <div id="prize"></div>
+    </div>
+    <div id="currentwinnerbox">
+    <div id="currentwinner"></div>
+
+     </div>
+    </div>
+ <!--End Of Prize and Winner Section-->
+
+
+ <!--Beginning Of Bidder Box And Buttons-->
+ <div id="bidderbox">
+
+
+<div id="bidder1">
+    <h2 onclick="whosebetter()">Bidder1</h2>
+    <input type="text"  id="textbox1" placeholder="Enter Dollar Amount"> 
+    <button onclick="addList()">Bid</button>
+</div>
+
+
+<div id="bidder2">
+    <h2>Bidder2</h2>
+    <input type="text" id="textbox2"  placeholder="Enter Dollar Amount"> 
+    <button onclick="addlist2()" >Bid</button>
+</div>
+
+
+</div>
+ <!--End  Of Bidder Box And Buttons-->
+
+
+ <!--Beginning Of Bidder Bid History-->
+<div id="bidder-history">
+<div id="history-box">
+<h1>Bidding History</h1>
+<!--Big White box content-->
+<div id="bigwhitebox">
+<ul id="bigwhitebox-ul">
+
+</ul>
+
+</div>
+<!--End of Big White box-->
+</div>
+
+
+
+</div>
+
+ <!--End Of Bidder Bid History-->
+
+
+     <script src="javascript/bidding.js"></script>
+</body>
+</html>

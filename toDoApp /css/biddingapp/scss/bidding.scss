@@ -1,0 +1,240 @@
+$button-color:#99D8EC;
+$button-color-hover:#1E2D4C;
+
+
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+/* This is The Nav Section*/
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+
+    #logo h2{
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    #Links{
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+        a{
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+/* End Of Navigation Section*/
+
+
+/*Begging section with Prize item and current Winner */
+
+
+#background-topsection{
+   background-image: url('https://c.tenor.com/Np38PIX6EXcAAAAC/red-smoke.gif');
+   background-size: 100% 100%;
+    padding-bottom: 20px;
+}
+
+
+#parentprize{
+    display: flex;
+    justify-content: center;
+   
+    height: 300px;
+ #prize{
+     background-color: white;
+     display: flex;
+     align-self: center;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+ }
+}
+
+#currentwinnerbox{
+  display: flex;
+  justify-content: center;
+    
+    #currentwinner{
+        background-color: white;
+        width: 200px;
+        height: 60px;
+        border: 2px solid black;
+    }
+}
+
+
+/*End section with Prize item and current Winner */
+
+/*Begging section with Bidder Section */
+
+#clockbox{
+    display: flex;
+    justify-content: center;
+
+}
+#countdown{
+
+    border: 5px solid black;
+    padding: 20px;
+    background-color: white;
+    width: 200px;
+    height: 70px;
+
+}
+#str{
+    display: flex;
+    justify-content: center;
+}
+#startbtn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:red;
+    color: white;
+}
+
+
+
+#bidderbox{
+  
+    background-image: url('https://media3.giphy.com/media/BbLRed34RD4ti/200w.gif?cid=82a1493b88d0glgcd7k9nou9pu6f0d0ekhvzauew45qfe6nw&rid=200w.gif&ct=g');
+   background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+/*Bidder One Begin*/
+#bidder1{
+    margin: 100px 10px;
+    width: 200px;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    padding-bottom: 20px;
+    input{
+        height: 25px;
+        width: 115px;
+        margin-bottom: 10px;
+    }
+    button{
+        background-color: $button-color;
+        border-radius: 10px;
+        height: 40px;
+        width: 120px;
+        -webkit-box-shadow: 0px 0px 15px -3px #000000; 
+        box-shadow: 0px 0px 15px -3px #000000;
+        &:hover{
+    background-color: $button-color-hover;
+     color: white;
+        }
+    }
+}
+/*Bidder One done*/
+
+/*Bidder Two Begin*/
+#bidder2{
+    margin: 100px 10px;
+    width: 200px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    padding-bottom: 20px;
+    input{
+        height: 25px;
+        width: 115px;
+        margin-bottom: 10px;
+    }
+    button{
+        background-color: $button-color;
+        border-radius: 10px;
+        height: 40px;
+        width: 120px;
+        -webkit-box-shadow: 0px 0px 15px -3px #000000; 
+        box-shadow: 0px 0px 15px -3px #000000;
+        &:hover{
+    background-color: $button-color-hover;
+     color: white;
+        }
+    }
+}
+
+
+
+/*Bidder Two done*/
+
+/*End section with Bidder Section */
+
+/*Start Of section with Bidder History */
+#bidder-history{
+    display: flex;
+    justify-content: center;
+ 
+width: 100%;
+height: 500px;
+border: 5px solid black;
+background-color: black;
+#history-box{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    background-color: purple;
+    width: 80%;
+    height: 400px;
+    h1{
+        text-align: center;
+    }
+
+    #bigwhitebox{
+        display: flex;
+        align-self: center;
+        background-color: white;
+        height: 300px;
+       width: 80%
+
+      
+
+    }
+}
+
+}
+#bigwhitebox-ul{
+    display:flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    
+   li{
+       margin-top: 10px;
+    width: 50%;
+    list-style-type: none;
+   }
+
+}
+
+/*End Of section with Bidder History */
